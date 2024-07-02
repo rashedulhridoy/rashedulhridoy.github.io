@@ -438,11 +438,33 @@
   </center>
 
   <!-- Footer -->
-  <footer>
-    <span>
-      <a href="https://www.linkedin.com/in/rashedul-hridoy-a65896291/"> Md Rashedul Islam</a> | <span class="far fa-copyright"></span> 2023 All Rights Reserved. Privacy Policy
-    </span>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div class="footerx">
+  <footer id="footer">
+    <div class="col col1">
+      <h3 class="h3-footer">Rashedul Hridoy</h3>
+      <p class="post3-footer">Web Developer and Cyber Security Expert</p>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/rashedulhridoydev" target="_blank" class="link"><img src="https://cdn-icons-png.freepik.com/256/121/121509.png?semt=ais_hybrid" alt="linkdin" /></a>
+        <a href="https://x.com/RashedulHr93901" target="_blank" class="link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/X_logo_2023_%28white%29.png/800px-X_logo_2023_%28white%29.png" alt="X" /></a>
+        <a href="https://github.com/rashedulhridoy" target="_blank" class="link"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" /></a>
+        <a href="https://facebook.com/rashedulhridoy.py" target="_blank" class="link"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook" /></a>
+        <a href="https://t.me/rashedulhridoy" target="_blank" class="link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="Telegram" /></a>
+      </div>
+      <p style="color: #818181; font-size: smaller">2023 © All Rights Reserved</p>
+    </div>
+    <div class="col col2">
+      <a href="https://rashedulhridoy.github.io/#home" ><p class="text-change">Home</p></a>
+      <a href="https://rashedulhridoy.github.io/#about" ><p class="text-change">About Us</p></a>
+      <a href="https://rashedulhridoy.github.io/#services" ><p class="text-change">Services</p></a>
+      <a href="https://rashedulhridoy.github.io/#skills" ><p class="text-change">Skills</p></a>
+      <a href="https://rashedulhridoy.github.io/#projects" ><p class="text-change">Projects</p></a>
+      <a href="https://rashedulhridoy.github.io/contact.html" ><p class="text-change">Contact Us</p></a>
+      <a href="https://rashedulhridoy.github.io/blog.html" ><p class="text-change">Blog</p></a>
+    </div>
   </footer>
+    </div>
 <style>
 .fa {
   color: #000;
@@ -525,8 +547,7 @@ section {
 .services,
 .skills,
 .projects,
-.contact,
-footer {
+.contact {
   font-family: "Poppins", sans-serif;
 }
 
@@ -1235,23 +1256,122 @@ section .title::after {
 }
 
 /*  Footer  */
-footer {
-  background: #111;
-  padding: 6px 16px;
-  color: #888c8d;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-}
-
-footer span a {
-  color: #1e3551;
-  text-decoration: none;
-}
-
-footer span a:hover {
-  text-decoration: underline;
-}
+@import url("https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300");
+  
+    :root {
+      --m: 4rem;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+  
+    .footerx {
+      background-color: #111 !important;
+      color: white;
+      font-family: "IBM Plex Sans";
+      font-weight: 300;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      color: #d5d5d5;
+      font-size: calc(0.3 * var(--m));
+    }
+  
+    footer {
+      z-index: 500;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      padding: 5rem 2vw;
+      position: relative;
+      background-color: #111;
+    }
+  
+    footer::before {
+      content: '';
+      position: absolute;
+    }
+  
+    
+  
+    .col {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: calc(0.3 * var(--m)) calc(0.8 * var(--m));
+      width: 28%;
+    }
+  
+    .col2, .col3 {
+      background-color: #333;
+      border-radius: calc(0.5 * var(--m));
+      padding: 1rem;
+    }
+  
+    img {
+      height: calc(0.3 * var(--m));
+      object-fit: cover;
+    }
+  
+    .social {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 1rem;
+      margin-top: 7px;
+      margin-bottom: 7px;
+    }
+  
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  
+    .link {
+      width: 100%;
+      height: 30px;
+      background-color: #333;
+      border-radius: calc(0.1 * var(--m));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    @media screen and (max-width: 1000px) {
+      :root {
+        --m: 3rem;
+      }
+    }
+  
+    @media screen and (max-width: 700px) {
+      footer {
+        flex-direction: column;
+        padding: 5rem 2rem;
+      }
+  
+      .col {
+        width: 100%;
+        align-items: left;
+        text-align: left;
+      }
+  
+      .social {
+        justify-content: center;
+      }
+    }
+    .h3-footer{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .post3-footer {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .text-change{
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
 /*  Media Query  */
 @keyframes pulsate {
