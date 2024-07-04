@@ -151,11 +151,35 @@ Whether you're a beginner or a seasoned programmer, Python's ease of use, versat
                     </p>
                 </div>
             </div>
+            <footer id="footer">
+                <div class="col col1">
+                  <h3 class="h3x">Rashedul Hridoy</h3>
+                  <p class="h3x">Web Developer and Cyber Security Expert</p>
+                  <br>
+                  <div class="social">
+                    <a href="https://linkedin.com/in/rashedulhridoy.dev" target="_blank" class="link"><img class="icon1" src="https://cdn-icons-png.freepik.com/256/121/121509.png?semt=ais_hybrid" alt="linkdin"></a>
+                    <a href="https://x.com/RashedulHr93901" target="_blank" class="link"><img class="icon1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/X_logo_2023_%28white%29.png/800px-X_logo_2023_%28white%29.png" alt="X"></a>
+                    <a href="https://github.com/rashedulhridoy" target="_blank" class="link"><img class="icon1" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+                    <a href="https://facebook.com/rashedulhridoy.py" target="_blank" class="link"><img class="icon1" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook"></a>
+                    <a href="https://t.me/rashedulhridoy" target="_blank" class="link"><img class="icon1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png" alt="Telegram"></a>
+                  </div>
+                  <br>
+                  <p style="color: #818181; font-size: smaller">2023 © All Rights Reserved</p>
+                </div>
+                <div class="col col2">
+                  <a class="link1" href="https://rashedulhridoy.github.io/#home"><p class="h3x">Home</p></a>
+                  <a class="link1" href="https://rashedulhridoy.github.io/#about"><p class="h3x">About Us</p></a>
+                  <a class="link1" href="https://rashedulhridoy.github.io/#services"><p class="h3x">Services</p></a>
+                  <a class="link1" href="https://rashedulhridoy.github.io/#skills"><p class="h3x">Skills</p></a>
+                  <a class="link1" href="https://rashedulhridoy.github.io/#projects"><p class="h3x">Projects</p></a>
+                  <a class="link1" href="https://rashedulhridoy.github.io/contact.html"><p class="h3x">Contact Us</p></a>
+                  <a class="link1" href="https://rashedulhridoy.github.io/blog.html"><p class="h3x">Blog</p></a>
+                </div>
+              </footer>
         
             <script src="script.js"></script>
             <style>
                 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -212,16 +236,93 @@ button:hover {
     margin-top: 10px;
 }
 
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+@import url("https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300");
+  
+  :root {
+    --m: 4rem;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+  }
 
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 5rem 2vw;
+    position: relative;
+    background-color: #111;
+  }
+
+  .col {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: calc(0.3 * var(--m)) calc(0.8 * var(--m));
+    width: 28%;
+  }
+
+  .col2, .col3 {
+    background-color: #333;
+    border-radius: calc(0.5 * var(--m));
+    padding: 1rem;
+  }
+
+  .icon1 {
+    height: calc(0.3 * var(--m));
+    object-fit: cover;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .link {
+    
+    background-color: transparent;
+    border-radius: calc(0.1 * var(--m));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 1000px) {
+    :root {
+      --m: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    footer {
+      flex-direction: column;
+      padding: 5rem 2rem;
+    }
+
+    .col {
+      width: 100%;
+      align-items: left;
+      text-align: left;
+    }
+
+    .social {
+      justify-content: left;
+    }
+  }
+  .h3x{
+    color: white;
+  }
 
             </style>
             <script>
